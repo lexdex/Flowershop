@@ -1,8 +1,9 @@
 package com.company.model;
 
+import com.company.Interfaces.ForSale;
 import com.company.Sellable;
 
-public class Flowerpot implements Sellable {
+public class Flowerpot implements ForSale {
     private int price;
     private String plantType;
     private String plantColor;

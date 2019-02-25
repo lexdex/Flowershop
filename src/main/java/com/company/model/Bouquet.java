@@ -1,18 +1,19 @@
 package com.company.model;
 
+import com.company.Interfaces.ForSale;
 import com.company.Sellable;
 
 import java.util.List;
 import java.util.Map;
 
-public class Bouquet implements Sellable {
+public class Bouquet  {
     private Map<Integer, Flower> flowers;
-    private String wrapperType;
+    private Decoration decoration;
 
-    public Bouquet() {
-    }
+    public Bouquet() {}
 
     public Bouquet(Map<Integer, Flower> flowers) {
+
         this.flowers = flowers;
     }
 

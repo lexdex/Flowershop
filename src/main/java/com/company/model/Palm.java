@@ -1,8 +1,9 @@
 package com.company.model;
 
+import com.company.Interfaces.ForSale;
 import com.company.Sellable;
 
-public class Palm implements Sellable {
+public class Palm implements ForSale {
     private int price;
     private String type;
     private int height;
