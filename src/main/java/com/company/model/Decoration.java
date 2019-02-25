@@ -5,10 +5,13 @@ public class Decoration {
     String Color;
     int Price;
 
+    public int getPrice() {
 
-    public int getPrice(Decoration decoration){
+        return this.Price;
+    }
 
-        return decoration.Price;
+    public int setPrice(int Price) {
+        return this.Price = Price;
     }
 
 }

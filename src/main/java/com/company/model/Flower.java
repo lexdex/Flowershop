@@ -1,7 +1,5 @@
 package com.company.model;
 
-import com.company.Sellable;
-
 public class Flower  {
     private String type;
     private int price;

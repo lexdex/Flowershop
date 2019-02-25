@@ -1,7 +1,6 @@
 package com.company.model;
 
 import com.company.Interfaces.ForSale;
-import com.company.Sellable;
 
 public class Flowerpot implements ForSale {
     private int price;

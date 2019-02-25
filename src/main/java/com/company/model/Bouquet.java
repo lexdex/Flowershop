@@ -1,9 +1,5 @@
 package com.company.model;
 
-import com.company.Interfaces.ForSale;
-import com.company.Sellable;
-
-import java.util.List;
 import java.util.Map;
 
 public class Bouquet  {
@@ -13,8 +9,16 @@ public class Bouquet  {
     public Bouquet() {}
 
     public Bouquet(Map<Integer, Flower> flowers) {
-
         this.flowers = flowers;
+    }
+
+
+    public int getFullPrice(){
+        int counter=0;
+        for (Map.Entry<Integer,Flower> entry: flowers.entrySet()){
+          counter+=entry.getValue().getPrice();
+        }
+        return counter+decoration.Price;
     }
 
 
